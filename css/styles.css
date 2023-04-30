@@ -1,0 +1,401 @@
+body, html {
+    margin: 0 auto;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: .5fr 5fr .5fr;
+}
+
+h1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 2vh;
+    font-family: 'Koulen', cursive;
+    color: #CE0000;
+}
+
+.info {
+    text-align: center;
+}
+
+.email {
+    text-align: center;
+}
+
+.gallery {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    height: 100%;
+}
+
+.carousel{
+    border: solid #212121 5px;
+
+}
+
+
+.programs {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.pricebox {
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    align-items: center;
+    padding-left: 1%
+}
+    
+
+.price {
+    justify-content: center;
+    background-color: #CE0000;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Koulen', cursive;
+    color: black;
+    min-height: 100px;
+    border: solid black 3px;
+    max-width: 450px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.card-text {
+    font-size: small;
+}
+
+h2 {
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500;
+    color: #CE0000;
+    margin-top: 2%;
+}
+
+h3 {
+    font-size: medium;
+    text-align: center;
+}
+
+.signup {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin: 2%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar{
+    background: linear-gradient(to left, #212121 40%, #CE0000);
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #212121 40%, #CE0000);
+    grid-column: 1/3;
+    grid-row: 3/4;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    min-height: 80px;
+    padding: 2%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card {
+    background-color: #d9d9d9;
+    object-fit: cover;
+    font-size: smaller;
+    margin: 1%;
+}
+
+.card-title {
+    font-family: 'Koulen', cursive;
+}
+
+.one {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+.two {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.four {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+.five {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    justify-content: center;
+}
+
+.flexform {
+    display: flex;
+    justify-content: center;
+}
+
+.six {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    background-color: #212121;
+    color: white;
+    text-align: center;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+img {
+    height: 100%;
+    width: 50%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.text {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+form {
+    width: 80%;
+    margin: 5%;
+    padding: 35px;
+    background-color:#D9D9D9;
+    grid-row: 2/3;
+    font-family: 'Koulen', cursive;
+    font-size: 2em;
+}
+
+.formtext {
+    font-family: 'Raleway', sans-serif;
+    margin: 2%;
+}
+
+input {
+    height: 50px;
+    width: 100%;
+    border: 2px solid #595959;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+}
+
+.signup{
+    font-size: 1.25em;
+}
+
+input:focus {
+    outline: 2px solid #CE0000;
+}
+
+.submitbutton {
+    color: white;
+    background: #CE0000;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    padding: 1.5%;
+    margin-top: 40px;
+    transition: all .2s;
+    }
+    
+    button:hover {
+    cursor: pointer;
+    background: black;
+}
+
+.Question {
+    font-size: 1.75em;
+    font-weight: 500;
+    margin-left: 3%;
+    margin-right: 3%;
+    color:#CE0000
+}
+
+.Answer {
+    margin-left: 3%;
+    margin-right: 3%;
+    font-weight: 600;
+}
+
+.gray-box{
+    background-color: #D9D9D9;
+    margin: 5%;
+    padding: 2%;
+}
+
+@media screen and (min-height: 30px) {
+    .card {
+        font-size: 8px;
+        max-width: fit-content;
+        max-height: fit-content;
+    }
+    h1{
+        margin-top: 12vh;
+    }
+
+   
+    .price{
+        font-size: 3em;
+    
+    }
+
+    .card-title {
+        font-size: medium;
+    }
+    }
+
+    
+@media screen and (min-width: 600px) {
+    .card {
+        font-size: large;
+        max-width: 150vh;
+    }
+    .pricebox {
+        justify-content: center;
+    }
+    .card-title {
+        font-size: 1em;
+    }
+    .gallery{
+        align-content: center;
+        margin: auto;
+    }
+    .carousel{
+        max-width: 50vh;
+        }
+    .img{
+        max-height:min-content;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    .card-text {
+        font-size: medium;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .card {
+        font-size: larger;
+    }
+    .price{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 2.5em;
+        margin-top: 10%;
+    }
+    .logo{
+        max-width: 55vh;
+        max-height: 55vh;
+        height: auto;
+        width: auto;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 3%;
+    }
+    .text{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding-left: 5%;
+    }
+    .five {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 3%;
+    }
+    form{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height:fit-content;
+        width: 100%
+    }
+    
+    .formtext {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .info {
+        font-size: xx-large;
+    }
+    h1{
+        font-size: 3.5em;
+    }
+
+    .email {
+        font-size: x-large;
+    }
+    .card-text {
+        font-size: large;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .card {
+        font-size: x-large;
+    }
+  
+    .price{
+        font-size: 3em;
+    }
+    .logo{
+        max-width: 60vh;
+        max-height: 60vh;
+        height: auto;
+        width: auto;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .text{
+   
+        align-items: center;
+        padding-right: 20%;
+        font-size: larger;
+    }
+    h1{
+        font-size: 4.5em;
+    }
+    .info {
+        font-size: xx-large;
+    }
+    .card-text{
+        font-size: x-large;
+    }
+}
